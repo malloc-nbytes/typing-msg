@@ -28,6 +28,10 @@ main(int argc, char **argv)
 
         // Hide the terminal cursor
         printf("\033[?25l");
+
+        // Clear screen
+        printf("\033[2J");
+        printf("\033[H");
         fflush(stdout);
 
         char *msg = argv[1];
